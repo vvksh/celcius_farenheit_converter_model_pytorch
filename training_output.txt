@@ -1,34 +1,34 @@
-Params: (tensor(-44.1730), tensor(-0.8260))
+Params: (tensor(0.5483), tensor(-0.0083))
 Grad: (tensor(4517.2964), tensor(82.6000))
 Epoch 0, loss 1763.884765625 
-Params: (tensor(-1.8590e+19), tensor(-3.2746e+17))
-Grad: (tensor(1.8912e+21), tensor(3.3313e+19))
-Epoch 10, loss inf 
-Params: (tensor(-inf), tensor(-1.3709e+35))
-Grad: (tensor(inf), tensor(1.3946e+37))
-Epoch 20, loss inf 
-Params: (tensor(nan), tensor(nan))
-Grad: (tensor(nan), tensor(nan))
-Epoch 30, loss nan 
-Params: (tensor(nan), tensor(nan))
-Grad: (tensor(nan), tensor(nan))
-Epoch 40, loss nan 
-Params: (tensor(nan), tensor(nan))
-Grad: (tensor(nan), tensor(nan))
-Epoch 50, loss nan 
-Params: (tensor(nan), tensor(nan))
-Grad: (tensor(nan), tensor(nan))
-Epoch 60, loss nan 
-Params: (tensor(nan), tensor(nan))
-Grad: (tensor(nan), tensor(nan))
-Epoch 70, loss nan 
-Params: (tensor(nan), tensor(nan))
-Grad: (tensor(nan), tensor(nan))
-Epoch 80, loss nan 
-Params: (tensor(nan), tensor(nan))
-Grad: (tensor(nan), tensor(nan))
-Epoch 90, loss nan 
-Params: (tensor(nan), tensor(nan))
-Grad: (tensor(nan), tensor(nan))
-Epoch 99, loss nan 
- weights: nan, biases: nan
+Params: (tensor(0.2323), tensor(-0.0169))
+Grad: (tensor(0.5781), tensor(3.0384))
+Epoch 10, loss 29.104167938232422 
+Params: (tensor(0.2323), tensor(-0.0199))
+Grad: (tensor(-0.0533), tensor(3.0268))
+Epoch 20, loss 29.094959259033203 
+Params: (tensor(0.2324), tensor(-0.0229))
+Grad: (tensor(-0.0532), tensor(3.0262))
+Epoch 30, loss 29.085803985595703 
+Params: (tensor(0.2324), tensor(-0.0259))
+Grad: (tensor(-0.0533), tensor(3.0257))
+Epoch 40, loss 29.076648712158203 
+Params: (tensor(0.2325), tensor(-0.0290))
+Grad: (tensor(-0.0533), tensor(3.0252))
+Epoch 50, loss 29.067485809326172 
+Params: (tensor(0.2325), tensor(-0.0320))
+Grad: (tensor(-0.0533), tensor(3.0247))
+Epoch 60, loss 29.05833625793457 
+Params: (tensor(0.2326), tensor(-0.0350))
+Grad: (tensor(-0.0533), tensor(3.0241))
+Epoch 70, loss 29.049182891845703 
+Params: (tensor(0.2326), tensor(-0.0380))
+Grad: (tensor(-0.0534), tensor(3.0236))
+Epoch 80, loss 29.0400390625 
+Params: (tensor(0.2327), tensor(-0.0411))
+Grad: (tensor(-0.0532), tensor(3.0231))
+Epoch 90, loss 29.030895233154297 
+Params: (tensor(0.2327), tensor(-0.0438))
+Grad: (tensor(-0.0532), tensor(3.0226))
+Epoch 99, loss 29.022666931152344 
+ weights: 0.23272287845611572, biases: -0.043776918202638626
