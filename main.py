@@ -16,11 +16,26 @@ def run_model():
     t_un = t_u * 0.1 #without normalization, gradient for weights and biases start out
     # drastically different
 
+    n_samples = t_u.shape[0]
+    n_val = int(0.2 * n_samples)
+    shuffled_indices = torch.randperm(n_samples)
+
+    train_indices = shuffled_indices[: -n_val]
+    val_indices = shuffled_indices[-n_val:]
+
+    train_t_u = t_u[train_indices]
+    train_t_c = t_c[train_indices]
+    val_t_u = t_u[val_indices]
+    val_t_c = t_c[val_indices]
+
+
     m = model.Model(loss_fn=mean_square_loss.loss_fn)
     m.training_loop(n_epochs=5000,
-                    learning_rate=1e-1,# Adam is less sensitive to scaling of parameters
-                    input_tensor=t_u, # with Adam, we dont need normalization as learning rate is set adaptively
-                    label_tensor=t_c,
+                    learning_rate=1e-1,
+                    train_input=train_t_u,
+                    train_labels=train_t_c,
+                    val_input=val_t_u,
+                    val_labels=val_t_c,
                     optimizer=torch.optim.Adam,
                     interval_to_print=500)
     print(f" weights: {m.params[0]}, biases: {m.params[1]}")
