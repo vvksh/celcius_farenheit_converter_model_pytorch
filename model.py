@@ -1,9 +1,11 @@
 from functools import partial
+from typing import Callable
 
 import torch
 
 class Model:
-    def __init__(self, loss_fn, grad_fn):
+    def __init__(self,
+                 loss_fn: Callable[[torch.Tensor, torch.Tensor], torch.Tensor]):
         self.params = torch.tensor([1.0, 1.0], requires_grad = True) # w, b
         self.loss_fn = loss_fn
 
@@ -16,20 +18,20 @@ class Model:
                       learning_rate: float,
                       input_tensor: torch.Tensor,
                       label_tensor: torch.Tensor,
-                      interval_to_print: int = 10) -> (float, float):
+                      optimizer: torch.optim.Optimizer.__class__, #not sure if this is the best approach
+                      interval_to_print: int = 10):
+        optimizer = optimizer([self.params], lr=learning_rate)
         for epoch in range(n_epochs):
-            if self.params.grad is not None:
-                self.params.grad.zero_()
-
             t_p = self.forward(input_tensor)
             loss = self.loss_fn(t_p, label_tensor)
+
+            optimizer.zero_grad()
             loss.backward()
-            w_grad, b_grad = self.grad_fn(input_tensor, label_tensor, t_p)
-            self.w = self.w - learning_rate * w_grad
-            self.b = self.b - learning_rate * b_grad
+            optimizer.step()
+
             if epoch % interval_to_print == 0 or epoch == n_epochs - 1:
-                print(f"Params: {self.w, self.b}")
-                print(f"Grad: {w_grad, b_grad}")
-                print(f'Epoch {epoch}, loss {loss} ')
-        return self.w, self.b
+                print(f"Params: {self.params}")
+                print(f"Grad: {self.params.grad[0], self.params.grad[1]}")
+                print(f'Epoch {epoch}, loss {loss}')
+
 

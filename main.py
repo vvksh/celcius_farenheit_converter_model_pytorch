@@ -16,13 +16,14 @@ def run_model():
     t_un = t_u * 0.1 #without normalization, gradient for weights and biases start out
     # drastically different
 
-    m = model.Model(loss_fn=mean_square_loss.loss_fn, grad_fn=mean_square_loss.grad_fn)
-    w, b = m.training_loop(n_epochs=5000,
-                           learning_rate=1e-2,
-                           input_tensor=t_un,
-                           label_tensor=t_c,
-                           interval_to_print=500)
-    print(f" weights: {w}, biases: {b}")
+    m = model.Model(loss_fn=mean_square_loss.loss_fn)
+    m.training_loop(n_epochs=5000,
+                    learning_rate=1e-2,
+                    input_tensor=t_un,
+                    label_tensor=t_c,
+                    optimizer=torch.optim.SGD,
+                    interval_to_print=500)
+    print(f" weights: {m.params[0]}, biases: {m.params[1]}")
 
 
 if __name__ == '__main__':
