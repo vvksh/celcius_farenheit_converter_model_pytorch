@@ -13,11 +13,13 @@ def run_model():
     t_u = [35.7, 55.9, 58.2, 81.9, 56.3, 48.9, 33.9, 21.8, 48.4, 60.4, 68.4]
     t_c = torch.tensor(t_c)
     t_u = torch.tensor(t_u)
+    t_un = t_u * 0.1 #without normalization, gradient for weights and biases start out
+    # drastically different
 
     m = model.Model(loss_fn=mean_square_loss.loss_fn, grad_fn=mean_square_loss.grad_fn)
     w, b = m.training_loop(n_epochs=100,
                            learning_rate=1e-4,
-                           input_tensor=t_u,
+                           input_tensor=t_un,
                            label_tensor=t_c)
     print(f" weights: {w}, biases: {b}")
 
