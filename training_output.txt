@@ -1,34 +1,34 @@
-Params: tensor([1.6725, 1.0864], requires_grad=True)
-Grad: (tensor(-67.2540), tensor(-8.6400))
-Epoch 0, loss 70.72434997558594
-Params: tensor([ 3.9735, -9.4123], requires_grad=True)
-Grad: (tensor(-0.2373), tensor(1.3430))
-Epoch 500, loss 8.40230941772461
-Params: tensor([  4.7719, -13.9317], requires_grad=True)
-Grad: (tensor(-0.1014), tensor(0.5740))
-Epoch 1000, loss 3.927570104598999
-Params: tensor([  5.1131, -15.8633], requires_grad=True)
-Grad: (tensor(-0.0433), tensor(0.2453))
-Epoch 1500, loss 3.110275983810425
-Params: tensor([  5.2589, -16.6887], requires_grad=True)
-Grad: (tensor(-0.0185), tensor(0.1048))
-Epoch 2000, loss 2.9610047340393066
-Params: tensor([  5.3212, -17.0415], requires_grad=True)
-Grad: (tensor(-0.0079), tensor(0.0448))
-Epoch 2500, loss 2.933738946914673
-Params: tensor([  5.3478, -17.1923], requires_grad=True)
-Grad: (tensor(-0.0034), tensor(0.0191))
-Epoch 3000, loss 2.9287590980529785
-Params: tensor([  5.3592, -17.2567], requires_grad=True)
-Grad: (tensor(-0.0014), tensor(0.0082))
-Epoch 3500, loss 2.9278488159179688
-Params: tensor([  5.3641, -17.2842], requires_grad=True)
-Grad: (tensor(-0.0006), tensor(0.0035))
-Epoch 4000, loss 2.9276833534240723
-Params: tensor([  5.3662, -17.2960], requires_grad=True)
-Grad: (tensor(-0.0003), tensor(0.0015))
-Epoch 4500, loss 2.9276528358459473
-Params: tensor([  5.3671, -17.3010], requires_grad=True)
-Grad: (tensor(-0.0001), tensor(0.0006))
-Epoch 4999, loss 2.927647352218628
- weights: 5.3670525550842285, biases: -17.30101203918457
+Params: tensor([0.9000, 0.9000], requires_grad=True)
+Grad: (tensor(4620.8970), tensor(84.6000))
+Epoch 0, loss 1847.484375
+Params: tensor([ 0.3973, -9.3983], requires_grad=True)
+Grad: (tensor(-1.2720), tensor(1.3660))
+Epoch 500, loss 8.430015563964844
+Params: tensor([  0.5097, -15.7688], requires_grad=True)
+Grad: (tensor(-0.2456), tensor(0.2658))
+Epoch 1000, loss 3.135977268218994
+Params: tensor([  0.5345, -17.1768], requires_grad=True)
+Grad: (tensor(-0.0204), tensor(0.0222))
+Epoch 1500, loss 2.9290993213653564
+Params: tensor([  0.5367, -17.3009], requires_grad=True)
+Grad: (tensor(-0.0009), tensor(0.0007))
+Epoch 2000, loss 2.9276459217071533
+Params: tensor([  0.5368, -17.3047], requires_grad=True)
+Grad: (tensor(6.3419e-05), tensor(1.5587e-05))
+Epoch 2500, loss 2.927645206451416
+Params: tensor([  0.5368, -17.3047], requires_grad=True)
+Grad: (tensor(0.0004), tensor(1.8895e-05))
+Epoch 3000, loss 2.927644968032837
+Params: tensor([  0.5368, -17.3047], requires_grad=True)
+Grad: (tensor(-0.0002), tensor(6.1393e-06))
+Epoch 3500, loss 2.927647352218628
+Params: tensor([  0.5368, -17.3047], requires_grad=True)
+Grad: (tensor(0.0005), tensor(1.6123e-05))
+Epoch 4000, loss 2.927645206451416
+Params: tensor([  0.5368, -17.3048], requires_grad=True)
+Grad: (tensor(8.2016e-05), tensor(5.8413e-06))
+Epoch 4500, loss 2.927645683288574
+Params: tensor([  0.5368, -17.3048], requires_grad=True)
+Grad: (tensor(-0.0007), tensor(-9.4473e-06))
+Epoch 4999, loss 2.927645206451416
+ weights: 0.5367716550827026, biases: -17.304767608642578

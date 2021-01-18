@@ -18,10 +18,10 @@ def run_model():
 
     m = model.Model(loss_fn=mean_square_loss.loss_fn)
     m.training_loop(n_epochs=5000,
-                    learning_rate=1e-2,
-                    input_tensor=t_un,
+                    learning_rate=1e-1,# Adam is less sensitive to scaling of parameters
+                    input_tensor=t_u, # with Adam, we dont need normalization as learning rate is set adaptively
                     label_tensor=t_c,
-                    optimizer=torch.optim.SGD,
+                    optimizer=torch.optim.Adam,
                     interval_to_print=500)
     print(f" weights: {m.params[0]}, biases: {m.params[1]}")
 
