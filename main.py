@@ -18,9 +18,10 @@ def run_model():
 
     m = model.Model(loss_fn=mean_square_loss.loss_fn, grad_fn=mean_square_loss.grad_fn)
     w, b = m.training_loop(n_epochs=5000,
-                           learning_rate=1e-4,
+                           learning_rate=1e-2,
                            input_tensor=t_un,
-                           label_tensor=t_c, interval_to_print=500)
+                           label_tensor=t_c,
+                           interval_to_print=500)
     print(f" weights: {w}, biases: {b}")
 
 
