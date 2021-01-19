@@ -1,6 +1,5 @@
 # inputs
 import torch
-import mean_square_loss
 import model
 
 
@@ -23,22 +22,22 @@ def run_model():
     train_indices = shuffled_indices[: -n_val]
     val_indices = shuffled_indices[-n_val:]
 
-    train_t_u = t_u[train_indices]
-    train_t_c = t_c[train_indices]
-    val_t_u = t_u[val_indices]
-    val_t_c = t_c[val_indices]
+    # unsqeeze adds an extra dimension, so list of values gets converted to array of 1d array
+    train_t_u = t_un[train_indices].unsqueeze(1)
+    train_t_c = t_c[train_indices].unsqueeze(1)
+    val_t_u = t_un[val_indices].unsqueeze(1)
+    val_t_c = t_c[val_indices].unsqueeze(1)
 
-
-    m = model.Model(loss_fn=mean_square_loss.loss_fn)
-    m.training_loop(n_epochs=5000,
-                    learning_rate=1e-1,
+    m = model.Model()
+    m.training_loop(n_epochs=6000,
+                    learning_rate=1e-2,
                     train_input=train_t_u,
                     train_labels=train_t_c,
                     val_input=val_t_u,
                     val_labels=val_t_c,
-                    optimizer=torch.optim.Adam,
-                    interval_to_print=500)
-    print(f" weights: {m.params[0]}, biases: {m.params[1]}")
+                    optimizer=torch.optim.SGD,
+                    interval_to_print=300)
+    print(f" weights: {m.model.weight}, biases: {m.model.bias}")
 
 
 if __name__ == '__main__':
