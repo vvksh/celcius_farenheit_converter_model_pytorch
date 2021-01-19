@@ -29,15 +29,15 @@ def run_model():
     val_t_c = t_c[val_indices].unsqueeze(1)
 
     m = model.Model()
-    m.training_loop(n_epochs=6000,
-                    learning_rate=1e-2,
+    m.training_loop(n_epochs=5000,
+                    learning_rate=1e-3,
                     train_input=train_t_u,
                     train_labels=train_t_c,
                     val_input=val_t_u,
                     val_labels=val_t_c,
                     optimizer=torch.optim.SGD,
                     interval_to_print=300)
-    print(f" weights: {m.model.weight}, biases: {m.model.bias}")
+    # print(f" weights: {m.model.hidden_linear.weight}, biases: {m.model.hidden_linear.bias}")
 
 
 if __name__ == '__main__':

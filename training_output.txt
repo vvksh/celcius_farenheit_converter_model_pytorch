@@ -1,87 +1,18 @@
-Params: (Parameter containing:
-tensor([[1.3893]], requires_grad=True), Parameter containing:
-tensor([-0.5386], requires_grad=True))
-Epoch 0, train loss 227.6322, val loss  179.3130
-Params: (Parameter containing:
-tensor([[3.8488]], requires_grad=True), Parameter containing:
-tensor([-8.2597], requires_grad=True))
-Epoch 300, train loss 11.4882, val loss  4.8733
-Params: (Parameter containing:
-tensor([[4.6064]], requires_grad=True), Parameter containing:
-tensor([-12.5128], requires_grad=True))
-Epoch 600, train loss 5.0490, val loss  5.5964
-Params: (Parameter containing:
-tensor([[5.0138]], requires_grad=True), Parameter containing:
-tensor([-14.8002], requires_grad=True))
-Epoch 900, train loss 3.1866, val loss  6.0285
-Params: (Parameter containing:
-tensor([[5.2329]], requires_grad=True), Parameter containing:
-tensor([-16.0304], requires_grad=True))
-Epoch 1200, train loss 2.6479, val loss  6.2734
-Params: (Parameter containing:
-tensor([[5.3508]], requires_grad=True), Parameter containing:
-tensor([-16.6920], requires_grad=True))
-Epoch 1500, train loss 2.4920, val loss  6.4087
-Params: (Parameter containing:
-tensor([[5.4142]], requires_grad=True), Parameter containing:
-tensor([-17.0478], requires_grad=True))
-Epoch 1800, train loss 2.4470, val loss  6.4826
-Params: (Parameter containing:
-tensor([[5.4482]], requires_grad=True), Parameter containing:
-tensor([-17.2392], requires_grad=True))
-Epoch 2100, train loss 2.4339, val loss  6.5226
-Params: (Parameter containing:
-tensor([[5.4666]], requires_grad=True), Parameter containing:
-tensor([-17.3421], requires_grad=True))
-Epoch 2400, train loss 2.4302, val loss  6.5442
-Params: (Parameter containing:
-tensor([[5.4764]], requires_grad=True), Parameter containing:
-tensor([-17.3974], requires_grad=True))
-Epoch 2700, train loss 2.4291, val loss  6.5558
-Params: (Parameter containing:
-tensor([[5.4817]], requires_grad=True), Parameter containing:
-tensor([-17.4272], requires_grad=True))
-Epoch 3000, train loss 2.4288, val loss  6.5621
-Params: (Parameter containing:
-tensor([[5.4846]], requires_grad=True), Parameter containing:
-tensor([-17.4432], requires_grad=True))
-Epoch 3300, train loss 2.4287, val loss  6.5655
-Params: (Parameter containing:
-tensor([[5.4861]], requires_grad=True), Parameter containing:
-tensor([-17.4518], requires_grad=True))
-Epoch 3600, train loss 2.4286, val loss  6.5673
-Params: (Parameter containing:
-tensor([[5.4869]], requires_grad=True), Parameter containing:
-tensor([-17.4565], requires_grad=True))
-Epoch 3900, train loss 2.4286, val loss  6.5683
-Params: (Parameter containing:
-tensor([[5.4874]], requires_grad=True), Parameter containing:
-tensor([-17.4589], requires_grad=True))
-Epoch 4200, train loss 2.4286, val loss  6.5688
-Params: (Parameter containing:
-tensor([[5.4876]], requires_grad=True), Parameter containing:
-tensor([-17.4603], requires_grad=True))
-Epoch 4500, train loss 2.4286, val loss  6.5691
-Params: (Parameter containing:
-tensor([[5.4877]], requires_grad=True), Parameter containing:
-tensor([-17.4610], requires_grad=True))
-Epoch 4800, train loss 2.4286, val loss  6.5692
-Params: (Parameter containing:
-tensor([[5.4878]], requires_grad=True), Parameter containing:
-tensor([-17.4614], requires_grad=True))
-Epoch 5100, train loss 2.4286, val loss  6.5693
-Params: (Parameter containing:
-tensor([[5.4878]], requires_grad=True), Parameter containing:
-tensor([-17.4614], requires_grad=True))
-Epoch 5400, train loss 2.4286, val loss  6.5693
-Params: (Parameter containing:
-tensor([[5.4878]], requires_grad=True), Parameter containing:
-tensor([-17.4614], requires_grad=True))
-Epoch 5700, train loss 2.4286, val loss  6.5693
-Params: (Parameter containing:
-tensor([[5.4878]], requires_grad=True), Parameter containing:
-tensor([-17.4614], requires_grad=True))
-Epoch 5999, train loss 2.4286, val loss  6.5693
- weights: Parameter containing:
-tensor([[5.4878]], requires_grad=True), biases: Parameter containing:
-tensor([-17.4614], requires_grad=True)
+Epoch 0, train loss 108.9138, val loss  482.9016
+Epoch 300, train loss 23.2876, val loss  149.0692
+Epoch 600, train loss 8.4300, val loss  83.3653
+Epoch 900, train loss 5.1180, val loss  56.1018
+Epoch 1200, train loss 4.2646, val loss  44.0922
+Epoch 1500, train loss 3.7932, val loss  36.9221
+Epoch 1800, train loss 3.4533, val loss  31.7526
+Epoch 2100, train loss 3.1883, val loss  27.7077
+Epoch 2400, train loss 2.9735, val loss  24.4140
+Epoch 2700, train loss 2.7928, val loss  21.6646
+Epoch 3000, train loss 2.6378, val loss  19.2864
+Epoch 3300, train loss 2.5117, val loss  17.1756
+Epoch 3600, train loss 2.4130, val loss  15.3474
+Epoch 3900, train loss 2.3345, val loss  13.8070
+Epoch 4200, train loss 2.2703, val loss  12.5171
+Epoch 4500, train loss 2.2160, val loss  11.4317
+Epoch 4800, train loss 2.1690, val loss  10.5089
+Epoch 4999, train loss 2.1408, val loss  9.9684
